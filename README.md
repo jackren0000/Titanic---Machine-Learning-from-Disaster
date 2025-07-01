@@ -1,25 +1,42 @@
-# [Titanic - Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic)
-## Kaggle Competition Overview
+### **Titanic: Predicting Survival with Machine Learning 🚢**
 
-The sinking of the Titanic is one of the most infamous shipwrecks in history.
-On April 15, 1912, during her maiden voyage, the widely considered “unsinkable” RMS Titanic sank after colliding with an iceberg. Unfortunately, there weren’t enough lifeboats for everyone onboard, resulting in the death of 1502 out of 2224 passengers and crew.
-While there was some element of luck involved in surviving, it seems some groups of people were more likely to survive than others.
-In this challenge, the aim is to build a predictive model that answers the question: “what sorts of people were more likely to survive?” using passenger data (ie name, age, gender, socio-economic class, etc).
+The sinking of the Titanic is one of the most infamous shipwrecks in history. In this project, we'll use machine learning to predict which passengers were most likely to survive this tragedy. We'll explore the data, build several models, and see which one gives us the best results.
 
-## Competition Description
+#### **Our Approach 🗺️**
 
-Using machine learning to create a model that predicts which passengers survived the Titanic shipwreck.
+1.  **Data Deep Dive 🏊:** We started by exploring the Titanic dataset to understand the passengers. We looked at features like age, gender, class, and fare to see what stories the data could tell.
 
+2.  **Data Prep 🛠️:** The data needed some work before we could use it. We handled missing values, converted categorical data into numbers, and even created a few new features to help our models.
 
-## Evaluation
+3.  **Model Mania 🤖:** We didn't just build one model—we built three! We wanted to see which one would give us the most accurate predictions. We used:
+    *   **K-Nearest Neighbors (KNN):** A simple model that classifies passengers based on their "neighbors."
+    *   **Logistic Regression:** A statistical model that's great for binary classification.
+    *   **Random Forest:** An ensemble model that combines multiple decision trees for better accuracy.
+    *   **Deep Learning:** A neural network model for more complex pattern recognition.
 
-The score is the percentage of passengers you correctly predict (accuracy).
+#### **The Results 🏆**
 
+After training and testing our models, we found that the **Deep Learning model** gave us the best results, with an accuracy of **82.46%**. This shows the power of neural networks in finding complex patterns in data.
 
-## Submitting
+#### **Tech We Used 🛠️**
 
-You should submit a csv file with exactly 418 entries plus a header row. Your submission will show an error if you have extra columns (beyond PassengerId and Survived) or rows.
-The file should have exactly 2 columns:
+*   Python
+*   Pandas & NumPy
+*   Scikit-learn
+*   PyTorch
+*   Jupyter Notebook
 
-PassengerId (sorted in any order)
-Survived (contains your binary predictions: 1 for survived, 0 for deceased)
+#### **Want to See the Code? 🚀**
+
+1.  **Clone the repo:**
+    ```bash
+    git clone https://github.com/jackren0000/Titanic---Machine-Learning-from-Disaster.git
+    ```
+2.  **Install the libraries:**
+    ```bash
+    pip install pandas numpy scikit-learn torch jupyter
+    ```
+3.  **Run the notebook:**
+    ```bash
+    jupyter notebook titanic-machine-learning-from-disaster.ipynb
+    ```
